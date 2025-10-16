@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -6,150 +7,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraFlix</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Adicionando estilo básico para garantir responsividade e organização */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        h1 {
-            margin: 0;
-        }
-
-        .chamada {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-            background-color: #fff;
-        }
-
-        .chamada-texto h2 {
-            font-size: 2rem;
-            margin: 0;
-        }
-
-        .chamada-texto p {
-            font-size: 1rem;
-            color: #777;
-        }
-
-        .video {
-            margin-top: 20px;
-            width: 100%;
-            max-width: 560px;
-            position: relative;
-            padding-bottom: 56.25%; /* Mantém a proporção 16:9 */
-            height: 0;
-            overflow: hidden;
-        }
-
-        .video iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        .recomendacoes {
-            margin: 40px 0;
-            padding: 0 20px;
-            text-align: center;
-        }
-
-        .outras-recomendacoes {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-        }
-
-        .outras-recomendacoes a {
-            width: 200px;
-            height: 113px;
-            display: block;
-        }
-
-        .outras-recomendacoes img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
 </head>
 
-<body> <!-- Início, corpo do documento -->
-    <header>
-        <h1>ALURAFLIX</h1>
-    </header>
+<body> <!--Inicio, corpo do documento-->
+    <header>ALURAFLIX</header>
+    <section class="chamada">
+        <div class="chamada-texto">
+            <h1>TRAILER OS SMURFS</h1>
+            <p>#Smurf</p>
+        </div>
 
-    <main> <!-- Definindo a área principal -->
-        <section class="chamada">
-            <div class="chamada-texto">
-                <h2>TRAILER OS SMURFS</h2>
-                <p>#Smurf</p>
-            </div>
+        <div class="video">
+            <iframe width="560" height="315" src="https://youtu.be/3j7ZaoKMxfY?si=PR3nLVEDuK8NxOsP"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+                web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
 
-            <div class="video">
-                <!-- Embed do vídeo com responsividade -->
-                <iframe src="https://youtu.be/3j7ZaoKMxfY?si=PR3nLVEDuK8NxOsP"
-                    title="Trailer do filme Os Smurfs"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" 
-                    allowfullscreen>
-                </iframe>
-            </div>
-        </section>
+    <!--Carrossel de imagens-->
+    <section class="recomendacoes">
+        <h2>Outras recomendações</h2>
+        <div class="outras-recomendacoes">
+            <a href="https://www.youtube.com/watch?v=10kObuxwee4">
+                <img src="https://img.youtube.com/vi/10kObuxwee4/maxresdefault.jpg" />
+            </a>
+            <a href="https://www.youtube.com/watch?v=VEdh5a0kIZE">
+                <img src="https://img.youtube.com/vi/VEdh5a0kIZE/maxresdefault.jpg" />
+            </a>
+            <a href="https://www.youtube.com/watch?v=xSaUcEzopiE">
+                <img src="https://img.youtube.com/vi/xSaUcEzopiE/maxresdefault.jpg" />
+            </a>
+            <a href="https://www.youtube.com/watch?v=N84TDkRoG0o">
+                <img src="https://img.youtube.com/vi/N84TDkRoG0o/maxresdefault.jpg" />
+            </a>
+            <a href="https://www.youtube.com/watch?v=QP2QG43VNXo">
+                <img src="https://img.youtube.com/vi/QP2QG43VNXo/maxresdefault.jpg" />
+            </a>
+        </div>
+    </section>
 
-        <!-- Carrossel de imagens -->
-        <section class="recomendacoes">
-            <h2>Outras recomendações</h2>
-            <div class="outras-recomendacoes">
-                <a href="https://www.youtube.com/watch?v=10kObuxwee4">
-                    <img src="https://img.youtube.com/vi/10kObuxwee4/maxresdefault.jpg" alt="Cenas do vídeo 1">
-                </a>
-                <a href="https://www.youtube.com/watch?v=VEdh5a0kIZE">
-                    <img src="https://img.youtube.com/vi/VEdh5a0kIZE/maxresdefault.jpg" alt="Cenas do vídeo 2">
-                </a>
-                <a href="https://www.youtube.com/watch?v=xSaUcEzopiE">
-                    <img src="https://img.youtube.com/vi/xSaUcEzopiE/maxresdefault.jpg" alt="Cenas do vídeo 3">
-                </a>
-                <a href="https://www.youtube.com/watch?v=N84TDkRoG0o">
-                    <img src="https://img.youtube.com/vi/N84TDkRoG0o/maxresdefault.jpg" alt="Cenas do vídeo 4">
-                </a>
-                <a href="https://www.youtube.com/watch?v=QP2QG43VNXo">
-                    <img src="https://img.youtube.com/vi/QP2QG43VNXo/maxresdefault.jpg" alt="Cenas do vídeo 5">
-                </a>
-            </div>
-        </section>
-    </main>
+<footer>
+    <h4>Desenvolvido por gabriela</h4>
+</footer>
 
-    <footer>
-        <h4>Desenvolvido por Gabriela</h4>
-    </footer>
-
-</body><!-- Fim, corpo do documento -->
+</body><!--Fim, corpo do documento-->
 
 </html>
